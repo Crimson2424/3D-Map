@@ -591,12 +591,12 @@ const Scene = ({ ready }) => {
                   </style>
                 </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
-                  <text
+                  <text className="font-sign"
                     transform="translate(.55 60.1)"
                     style={{
                       fill: "#414042",
-                      fontFamily:
-                        "BrittanySignatureRegular,'Brittany Signature'",
+                      // fontFamily:
+                      //   "BrittanySignatureRegular,'Brittany Signature'",
                       fontSize: "27.68px",
                       stroke: "#414042",
                       strokeMiterlimit: 10,
