@@ -226,6 +226,8 @@ const Dropbox = ({
               max-sm:px-1 max-sm:p-0.5 max-sm:text-[8px] 
               max-md:px-2 max-md:p-1 max-md:text-[10px] 
               max-lg:px-2 max-lg:p-1 max-lg:text-[12px]
+              max-xl:px-2 max-xl:p-1 max-xl:text-[12px]
+              max-2xl:px-2 max-2xl:p-1 max-2xl:text-[14px]
               "
               onClick={(e) => {
                 const container = containerRef.current;
@@ -257,7 +259,9 @@ const Dropbox = ({
                   max-sm:bottom-7 max-sm:border-1 max-sm:rounded-md max-sm:gap-1 max-sm:p-1 
                   max-md:bottom-9 max-md:border-1 max-md:rounded-lg max-md:gap-0 max-md:justify-between max-md:p-1 
                   max-lg:bottom-13 max-lg:rounded-lg max-lg:gap-0 max-lg:justify-between max-lg:p-1
-                  max-xl:bottom-18 max-xl:p-2 max-xl:gap-0 max-xl:justify-between"
+                  max-xl:bottom-18 max-xl:p-2 max-xl:gap-0 max-xl:justify-between
+                  max-2xl:bottom-17 max-2xl:p-2 max-2xl:gap-0 max-2xl:justify-between
+                  "
                   style={{
                     "--lx": "50%",
                     "--ly": "50%",
@@ -277,7 +281,9 @@ const Dropbox = ({
                       className="overflow-hidden uppercase text-shadow-lg text-white p-1 px-3 rounded-md transition-all duration-300 cursor-pointer relative text-center 
                       max-sm:px-1 max-sm:p-0.5 max-sm:rounded-xs max-sm:text-[6px]  
                       max-md:px-2 max-md:p-1 max-md:rounded-xs max-md:text-[9px]   
-                      max-lg:px-2 max-lg:p-1 max-lg:rounded-sm max-lg:text-[12px]"
+                      max-lg:px-2 max-lg:p-1 max-lg:rounded-sm max-lg:text-[12px]
+                      max-2xl:px-2 max-2xl:p-1 max-2xl:rounded-sm max-2xl:text-[13px]
+                      "
                       style={
                         activeMarker === path
                           ? {
