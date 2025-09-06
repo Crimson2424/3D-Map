@@ -1,14 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import Scene from "./Scene";
-import { Suspense, useState } from "react";
-import { Html, useProgress } from "@react-three/drei";
+import React, { Suspense, useState } from "react";
+import { Html, Loader, useProgress } from "@react-three/drei";
 // import Loader from "./Loader";
-
-function Loader() {
-  const { active, progress, errors, item, loaded, total } = useProgress()
-  return <Html center>{progress} % loaded</Html>
-}
 
 
 const Experience = () => {
@@ -34,10 +29,13 @@ const Experience = () => {
           scene.fog = new THREE.Fog("#89CFF1", 300, 600); // exponential fog
         }}
       >
-
-          <Scene ready={ready} />
+          <Suspense fallback={null}>
+            <Scene ready={ready} />
+          </Suspense>
           {/* <Loader  /> */}
+          
       </Canvas>
+      <Loader />
     </>
   );
 };

@@ -10,7 +10,6 @@ import {
   OrbitControls,
   Sky,
 } from "@react-three/drei";
-import { Perf } from "r3f-perf";
 import { useControls } from "leva";
 import * as THREE from "three";
 import { createPortal } from "react-dom";

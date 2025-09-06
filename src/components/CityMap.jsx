@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP)
 const path = '/model/CityMapScaledDown-v2.glb'
 
 export function CityMap({ meshBasicMaterial, activeMarker, activeGroupeMarker, markersGroup }) {
-  const { nodes, materials } = useGLTF(path)
+  const { nodes, materials } = useGLTF('/model/CityMapScaledDown-v2.glb')
   const buildingTexture = useTexture('/textures/Buildings.webp')
   buildingTexture.flipY = false
   const grassTexture = useTexture('/textures/Grass.webp')
