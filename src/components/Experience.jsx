@@ -16,7 +16,12 @@ const Experience = () => {
 
   return (
     <>
-    
+      <div className="fixed w-30 top-3 right-3 z-10
+      sm:w-40
+      lg:w-50
+      ">
+        <img className="invert opacity-80" src="/images/Brainwing-logo.webp" alt="" />
+      </div>
       <Canvas
         className="w-full h-full overflow-hidden"
         camera={{
