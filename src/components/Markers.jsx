@@ -4,7 +4,7 @@ import React, { forwardRef } from "react";
 const Markers = forwardRef(({ clickHandle, path, position, name,  index }, ref) => {
   return (
     <Html className="opacity-0" zIndexRange={[0, 0]} ref={(el) => (ref.current[index+2] = el)} position={position} distanceFactor={100}>
-      <span className="marker-class" onClick={() => clickHandle(path)}>
+      <span className="marker-class cursor-pointer" onClick={() => clickHandle(path)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
